@@ -53,7 +53,7 @@ $(document).ready(function () {
     $(".iconic").click(function () {
         $(".historic-image").show();
         $(".awarded-image").hide();
-        $(".iconic-image").show();
+        $(".iconic-image").hide();
         $(".modern-image").hide();
         $(".longest-image").hide();
         $(".highest-image").hide();
@@ -120,3 +120,70 @@ $(document).ready(function () {
 
 });
 
+
+// $(document).ready(function () {
+//     $('.bridge').on('change', function () {
+//         // console.log("some changes occure")
+//         var bridge_list = [];
+
+//         $('#filters :input:checked').each(function(){
+
+//             var bridge = $(this).val();
+//             bridge_list.push(bridge);
+//             console.log(bridge_list);
+           
+
+//             if(bridge_list.length == 6){
+//                 $('.main-bridge').fadeIn('slow');
+//             }
+//             else{
+//                 $('.main-bridge').each(function(){
+//                     var bridgeTag = $(this).attr('data-tag');
+                
+//                     if(jQuery.inArray(bridgeTag,bridge_list) > -1)
+//                     {
+
+                        
+                        
+//                         $(this).fadeIn('slow')
+//                     }
+//                         else
+//                         {
+//                             $(this).hide()
+
+//                         }
+
+//                 })
+                
+//             }
+
+// });
+//     });
+// });
+
+
+$(document).ready(function () {
+    $('.bridge').on('change', function () {
+      var bridge_list = [];
+  
+      $('#filters :input:checked').each(function(){
+        var bridge = $(this).val();
+        bridge_list.push(bridge);
+      });
+  
+      if($('#filters :input:checked').length == 0){
+        $('.main-bridge').fadeIn('slow');
+      }
+      else{
+        $('.main-bridge').filter(function(){
+          var bridgeTag = $(this).attr('data-tag');
+          return $.inArray(bridgeTag, bridge_list) > -1;
+        }).fadeIn('slow');
+        $('.main-bridge').filter(function(){
+          var bridgeTag = $(this).attr('data-tag');
+          return $.inArray(bridgeTag, bridge_list) == -1;
+        }).hide();
+      }
+    });
+  });
+  

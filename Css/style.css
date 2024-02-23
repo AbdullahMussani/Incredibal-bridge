@@ -1,8 +1,13 @@
+
+
+
+
+
 .logo {
 
     height: 10px;
     width: 100%;
-
+    
   
    
 
@@ -13,13 +18,14 @@
 .contact {
 
     display: flex;
-    margin: 0 0 0 90px;
+    margin-left: 90px ;
     top: 100px;
     line-height: 10px;
     font-size: 20px;
     letter-spacing: 2px;
     margin-top: 30px;
     padding: 0 30px;
+   
 
 
 }
@@ -31,6 +37,7 @@
     justify-content: space-around;
     align-items: center;
     padding: 0 30px;
+    
   
 }
 
@@ -39,6 +46,7 @@
     height: 200px;
     width: 200px;
     margin: 20px 40px 0 70px;
+    
 
 
 }
@@ -50,6 +58,7 @@
     justify-content: center;
     align-items: center;
     padding: 0 20px;
+    
 
 
 }
@@ -57,6 +66,7 @@
 .ourlocation {
     font-size: 20px;
     margin: 50px 0 0 50px;
+    
    
 }
 
@@ -71,7 +81,7 @@ h1 {
 
     margin: 0px;
     padding: 0px;
-    position: fixed;
+    position: relative;
 
 
 }
@@ -82,40 +92,45 @@ p {
 }
 
 .animated {
-    margin-bottom: 80px;
+    
+    text-align: center;
     font-size: 30px;
-    color: orange;
-    font-family: 'Poppins', sans-serif;
+    color: rgb(17, 17, 16);
+    
     font: bold;
 }
 
-.nav-bar {
-    width: 100%;
-    position: relative;
-    justify-content: start;
-    text-align: center;
-    padding: 15px 30px;
-    margin-bottom: 5px;
-    margin-top: 0;
-    color: white;
-
-
+.d-block{
+    opacity: 0.50;
 }
+
+
 
 
 .nav-bar .icon {
     font-size: 35px;
     font-weight: 800;
-   
+    position: fixed;
     cursor: pointer;
     margin-left: 100px;
-    color: #f8be53;
+    color: #f79c65;
 }
 
+.nav-link{
+    font-size:15px;
+    color: white;
+    
 
-
+   
+}
+.nav-link:hover{
+    background-color: #f79c65;
+    border-radius: 5px;
+    
+   
+}
 #feed {
-    background: #ff9c6e;
+    background: #f79c65;
     text-transform: uppercase;
     color: #fff;
     cursor: pointer;
@@ -170,8 +185,8 @@ p {
 }
 
 .about-us img {
-    flex: 0 50%;
-    max-width: 50%;
+    display: flex;
+    max-width: 100%;
     height: 400px;
     margin-top: 100px;
 }
@@ -203,7 +218,7 @@ p {
 .read-more-btn {
     display: inline-block;
     color: #fff;
-    background-color: rgb(236, 163, 52);
+    background-color:#f79c65;
     border: none;
     border-radius: 5px;
     padding: 12px 20px;
@@ -214,9 +229,6 @@ p {
 
 }
 
-.count{
-    margin-top: 910%;
-}
 
 
 
@@ -226,18 +238,58 @@ p {
     align-items: center;
     justify-content: space-between;
     background: transparent;
-    
-    background-repeat: no-repeat;
-    background-size: cover;
+
     margin: 20px;
     padding: 10px;
+    
     
 
 
 }
 
+/* Filter Start */
+.filter-1{
+    display: flex;
+    margin-top: 50px;
+    margin-left: 40px;
+    height: 100px;
+    font-size: 30px;
+    
+    
+    
+}
+#check1{
+    height: 20px;
+    width: 20px;
+}
+#check2{
+    height: 20px;
+    width: 20px;
+}
+#check3{
+    height: 20px;
+    width: 20px;
+}
+#check4{
+    height: 20px;
+    width: 20px;
+}
+#check5{
+    height: 20px;
+    width: 20px;
+}
+#check6{
+    height: 20px;
+    width: 20px;
+}
+#check7{
+    height: 20px;
+    width: 20px;
+}
 
-
+  
+ 
+  /* Filter End */
 .counter-box {
     width: 100%;
     height: 140px;
@@ -248,6 +300,8 @@ p {
     text-align: center;
     background: transparent;
     color: #000000;
+    
+    
 
 
 }
@@ -271,17 +325,18 @@ p {
 }
 
 .cardgallery {
-    width: 95%;
-    height: 600px;
+    width: 100%;
+    height: auto;
 
     display: flex;
-    margin-left: 25px;
+    margin-left: 5px;
     margin-top: 30px;
 }
 
 .cardgallery-box {
     width: 100%;
-    height: 600px;
+    height: auto;
+    margin-right: 30px;
 
 }
 
@@ -298,7 +353,7 @@ p {
     margin: 0px;
     padding: 0;
     height: 50px;
-    width: 12.2%;
+    width: 12%;
     border: 1px solid transparent;
     font-size: 20px;
     background-color: rgba(12, 2, 2, 0.973);
@@ -341,12 +396,7 @@ p {
     margin-right: 90px;
 }
 
-.descrition-filter-ad .filter {
-    width: 18%;
-    height: 1000px;
-    border: 1px solid black;
-    margin-top: 45px;
-}
+
 
 .descrition-filter-ad .sidead {
     width: 15%;
@@ -357,15 +407,37 @@ p {
 
 .descrition-filter-ad {
     width: 100%;
-    height: 1000px;
+    height: auto;
     display: flex;
 }
 
 .descrition-filter-ad .ad {
-    border: 1px solid black;
-    width: 80%;
-    height: 300px;
-    margin-left: 40px;
+    
+    width: 90%;
+    height: 400px;
+    margin-left: 10px;
+    margin-bottom: 110px;
+    animation-name: travelingAds;
+    animation-iteration-count: infinite;
+    animation-duration: 20s;
+}
+
+@keyframes travelingAds{
+    0%{
+        background-image: url(/images/Ads/Ad\ 2.jpg);
+      
+    }
+    75%{
+        background-image: url(/images/Ads/Ad\ 3.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    100%{
+        background-image: url(/images/Ads/Ad\ 1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
 }
 
 
@@ -437,59 +509,42 @@ p {
     font-weight: 800px;
     text-decoration: none;
     letter-spacing: 3px;
-    background: #f8be53;
+    background: #f79c65;
 
 }
 
 
-.deneb_footer .widget_wrapper {
+.deneb_footer  {
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 100px;
     padding-bottom: 70px;
-    background-color: #bdbdbd;
+    
     width: 100%;
-    height: 700px;
+    height: 640px;
     display: flex;
     
     
 
 }
-
-
-.deneb_footer .widget_wrapper .widget .widget_title {
-    margin-bottom: 30px;
-    
-
-
+.img-fluid{
+    margin-top: -100px;
 }
-.widget_title-2{
-    margin-left: 600px;
-    margin-top: 100px;
-}
-
-.deneb_footer .widget_wrapper .widget .widget_title h4 {
-    font-weight: bold;
-    
-    
-
-}
-.widget .widget_contact{
-    position: absolute;
-    top: 2430%;
+.sitemap{
+    margin-top: 10px;
+    width: 800px;
+    height: 400px; 
+    display: flex;
     
 }
-.deneb_footer .widget_wrapper .widget .widget_title h4:after {
-    content: "";
-    display: block;
-    max-width: 38px;
-    height: 2px;
 
-} 
+
+
 
 .deneb_footer .widget_wrapper .widegt_about p {
     margin-bottom: 20px;
     font-size: 15px;
+    margin-left: 20px;
 
 
 }
@@ -507,7 +562,7 @@ p {
     text-align: center;
     border-radius: 50%;
     background-color: #ffe1a6;
-    color: #fba543;
+    color: #f79c65;
     font-size: 20px;
     -webkit-transition: all all 0.5s ease-out 0s;
     -moz-transition: all all 0.5s ease-out 0s;
@@ -519,9 +574,9 @@ p {
 
 .deneb_footer .widget_wrapper .widegt_about .social li a:hover,
 .deneb_footer .widget_wrapper .widegt_about .social li a:focus {
-    background-image: -moz-linear-gradient(0deg, #ffbd27 0%, #feb000 100%);
-    background-image: -webkit-linear-gradient(0deg, #ffbd27 0%, #feb000 100%);
-    background-image: -ms-linear-gradient(0deg, #ffbd27 0%, #feb000 100%);
+    background-image: -moz-linear-gradient(0deg, #f79c65 0%, #f79c65 100%);
+    background-image: -webkit-linear-gradient(0deg, #f79c65 0%, #f79c65 100%);
+    background-image: -ms-linear-gradient(0deg, #f79c65 0%, #f79c65 100%);
     color: #fff;
     box-shadow: 2.5px 4.33px 15px 0px rgba(254, 176, 0, 0.4);
 
@@ -543,32 +598,11 @@ p {
     color: #ffffff;
 }
 
-.deneb_footer .widget_wrapper .widget_contact .contact_info .single_info {
-    margin: 10px;
-    
-   
-   
-   
-}
-
-.deneb_footer .widget_wrapper .widget_contact .contact_info .single_info .icon {
-    font-size: 12px;
-    color: #ffffff;
-
-}
-
-.deneb_footer .widget_wrapper .widget_contact .contact_info .single_info .info p a {
-    color: #ffffff;
-
-}
-
-.deneb_footer .widget_wrapper .widget_contact .contact_info .single_info .info p span {
-    display: block;
-    margin-right: 60px;
-}
 
 .deneb_footer .copyright_area {
-    background: #edecf0;
+    background: transparent;
+    text-align: center;
+    margin-top: 50px;
     
 }
 
@@ -577,51 +611,34 @@ p {
 }
 
 .deneb_footer .copyright_area .copyright_text p {
-    color: #011a3e;
+    color: #161414;
     font-size: 16px;
+    font-style: normal
     
 }
 
 .deneb_footer .copyright_area .copyright_text p span {
-    color: #f1f0ee;
+    color: #fff;
+}
+/* Contact form */
+.contact-form{
+    border: none;
+    margin-left: 500px;
+    height: 400px;
+    width: 100%;
+    margin-top: -400px;
+    display: flex;
 }
 
-
-
-
-
-
-@media (max-width:800px){
-    body{
-        width: 100%;
-        overflow-x: hidden;
-    }
-    .contact{
-        display: flex;
-    }
-    
-    .logo{
-        display: block;
-    }
-    #feed{
-        display: inline-block;
-    }
-   .deneb_footer .widget_wrapper{
-        display: block;
-    
-     
-    }
-    .header1{
-        display: block;
-    }
+/* Footer */
+.list-unstyled{
+    margin: 0;
+    font-size: 20px;
+    margin-top: 40px;
 }
-
-
-
-
-
-
-
-
+.my-5{
+    height: 400px;
+   
+}
 
 
